@@ -11,7 +11,7 @@
 
 - 📫 How to reach me **aanand240699@gmail.com**
 
-- 📫 Visit me at **https://aanand24061999.github.io/Aanand24061999/**
+- 📫 Visit me at **https://aanand24061999.github.io/Aanand-Sanodiya/**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
