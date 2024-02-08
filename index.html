@@ -61,7 +61,7 @@
                 <span class="up">Hello!</span>
                 <span class="down">I am Aanand Sanodiya</span>
             </h1>
-            <p class="header-subtitle">FRONTEND WEB DESIGNER</p>
+            <p class="header-subtitle"><span class="type"></span></p>
 
             <button class="btn btn-primary" href="#about">Visit My Works</button>
         </div>
@@ -162,6 +162,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
     <script>
+        var typed = new Typed('.type', {
+            strings: ['Frontend Developer', 'React Developer', 'UI/UX Designer', 'Logo Designer',],
+            typeSpeed: 40,
+            backSpeed: 40,
+            loop: true,
+        });
         const Texts = [
             'HTML', 'JAVASCRIPT', 'CSS',
             'REACT', 'BOOTSTRAP', 'TAILWIND',
@@ -202,7 +208,7 @@
             initSpeed: 'fast',
 
             // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
-            direction: 360,
+            direction: 135,
 
             // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
             keep: true
