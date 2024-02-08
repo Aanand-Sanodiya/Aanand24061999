@@ -6094,11 +6094,11 @@ a.badge-dark.focus {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	height: 0.3rem;
+	height: 1rem;
 	overflow: hidden;
 	font-size: 0.75rem;
 	background-color: #e9ecef;
-	border-radius: 0.25rem;
+	border-radius: 10rem;
 }
 
 .progress-bar {
@@ -12292,7 +12292,8 @@ pre .code {
 		position: absolute;
 		top: calc(100% + 1px);
 		left: 0;
-		background: #fff;
+		background: #ffffff45;
+		backdrop-filter: blur(5px);
 		border-radius: 0 0 0 0;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
@@ -12332,7 +12333,7 @@ pre .code {
 	.custom-navbar .nav .item .link {
 		padding: 7px 12px;
 		display: block;
-		color: #6c757d;
+		color: #272b2f;
 	}
 }
 
@@ -12645,4 +12646,27 @@ pre .code {
 
 .section-lg {
 	padding: 100px 0 !important;
+}
+.tagcloud {
+	display: inline-block;
+	top: 0px;
+	left: 0px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-family: "Montserrat", sans-serif !important;
+	font-size: 20px;
+	position: relative;
+	width: 100%; /* Use 100% width to make it responsive */
+	height: auto;
+}
+.tagcloud--item:hover {
+	color: #695aa6;
+}
+
+.tagcloud--item {
+	position: absolute;
+	top: 50%; /* Center vertically */
+	left: 50%; /* Center horizontally */
+	transform: translate(-50%, -50%); /* Center the tag */
+	/* Add other styles as needed */
 }

@@ -24,6 +24,23 @@
 // 	$("ul.nav").toggleClass("show");
 // });
 $(document).ready(function () {
+	// Function to handle window resize
+	function handleResize() {
+		if ($(window).width() > 991) {
+			$("ul.nav").addClass("show");
+		} else {
+			$("ul.nav").removeClass("show");
+		}
+	}
+
+	// Call handleResize on document ready
+	handleResize();
+
+	// Call handleResize on window resize
+	$(window).resize(handleResize);
+});
+
+$(document).ready(function () {
 	// Smooth scrolling for navigation links
 	$(".navbar .nav-link").on("click", function (event) {
 		if (this.hash !== "") {
@@ -47,17 +64,6 @@ $(document).ready(function () {
 	$("#nav-toggle").click(function () {
 		$(this).toggleClass("is-active");
 		$("ul.nav").toggleClass("show");
-	});
-
-	// Check screen size on window resize
-	$(window).resize(function () {
-		if ($(window).width() > 991) {
-			// If window width is greater than 991px (desktop view), add the 'show' class to ul.nav
-			$("ul.nav").addClass("show");
-		} else {
-			// If window width is 991px or less (mobile view), remove the 'show' class from ul.nav
-			$("ul.nav").removeClass("show");
-		}
 	});
 });
 
