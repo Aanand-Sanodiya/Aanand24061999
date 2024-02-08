@@ -576,8 +576,8 @@ pre code {
 
 .container {
 	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
+	/* padding-right: 15px;
+	padding-left: 15px; */
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -2219,6 +2219,9 @@ pre code {
 	}
 	.table-responsive-lg > .table-bordered {
 		border: 0;
+	}
+	.tagcloud {
+		top: 10% !important;
 	}
 }
 
@@ -12649,12 +12652,12 @@ pre .code {
 }
 .tagcloud {
 	display: inline-block;
-	top: 0px;
+	top: -45px;
 	left: 0px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	font-family: "Montserrat", sans-serif !important;
-	font-size: 18px;
+	font-size: 15px;
 }
 .tagcloud--item:hover {
 	color: #695aa6;
