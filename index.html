@@ -157,19 +157,52 @@
     <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
     <script>
         const Texts = [
-            'HTML', 'CSS', 'JAVASCRIPT',
-            'REACT', 'BOOTSTRAP', 'TAILWIND CSS',
+            'HTML', 'JAVASCRIPT', 'CSS',
+            'REACT', 'BOOTSTRAP', 'TAILWIND',
             'LARAVEL', 'PHP', 'MYSQL', 'JQUERY',
-            'SASS', 'WORDPRESS'
+            'WORDPRESS', 'SASS', 'LOGO', 'FIGMA', 'Github'
         ];
 
-        var tagCloud = TagCloud('#Sphere', Texts, {
-            radius: 230,
+        // var tagCloud = TagCloud('#Sphere', Texts, {
+        //     radius: 230,
+        //     maxSpeed: 'normal',
+        //     initSpeed: 'fast',
+        //     direction: 135,
+        //     keep: true
+        // });
+        // Rotating Sphere Text
+        let width;
+        let details = navigator.userAgent;
+
+        let regexp = /android|iphone|kindle|ipad/i;
+
+        let isMobileDevice = regexp.test(details);
+
+        if (isMobileDevice) {
+            width = window.innerWidth / 2.5;
+        } else {
+            width = window.innerWidth / 5;
+        }
+
+        var tagCloud = TagCloud('.Sphere', Texts, {
+
+            // Sphere radius in px
+            // radius: 250,
+            radius: width,
+
+            // animation speed
+            // slow, normal, fast
             maxSpeed: 'normal',
             initSpeed: 'fast',
-            direction: 135,
+
+            // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
+            direction: 360,
+
+            // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
             keep: true
+
         });
+
 
         var color = '#6c757d';
         document.querySelector('#Sphere').style.color = color;

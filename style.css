@@ -12654,19 +12654,8 @@ pre .code {
 	font-weight: 700;
 	letter-spacing: 1px;
 	font-family: "Montserrat", sans-serif !important;
-	font-size: 20px;
-	position: relative;
-	width: 100%; /* Use 100% width to make it responsive */
-	height: auto;
+	font-size: 18px;
 }
 .tagcloud--item:hover {
 	color: #695aa6;
-}
-
-.tagcloud--item {
-	position: absolute;
-	top: 50%; /* Center vertically */
-	left: 50%; /* Center horizontally */
-	transform: translate(-50%, -50%); /* Center the tag */
-	/* Add other styles as needed */
 }
